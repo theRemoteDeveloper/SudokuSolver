@@ -10,7 +10,11 @@ public class Main {
 		CSVFileReader csvFile = new CSVFileReader("sudoku_board.csv");
 		sudoku.loadSudokuArray(csvFile.read());
 		
-		System.out.println("Initialized Sudoku board");
+		System.out.println("\nInitialized Sudoku board");
+		sudoku.printSudokuArray();
+		
+		System.out.println("\nSolved Sudoku board");
+		sudoku.solveSudoku();
 		sudoku.printSudokuArray();
 	}
 	
